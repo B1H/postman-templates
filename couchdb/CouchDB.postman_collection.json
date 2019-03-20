@@ -1,0 +1,819 @@
+{
+	"info": {
+		"_postman_id": "fde6e241-070f-42c5-8568-9ba2789feca1",
+		"name": "CouchDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DB",
+			"item": [
+				{
+					"name": "compact database",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{user}}:{{password}}@{{server}}:{{port}}/{{db}}/_compact",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"auth": {
+								"user": "{{user}}",
+								"password": "{{password}}"
+							},
+							"port": "{{port}}",
+							"path": [
+								"{{db}}",
+								"_compact"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						},
+						"description": "to compact single database"
+					},
+					"response": []
+				},
+				{
+					"name": "Find",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{user}}:{{password}}@{{server}}:{{port}}/{{db}}/_find",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"auth": {
+								"user": "{{user}}",
+								"password": "{{password}}"
+							},
+							"port": "{{port}}",
+							"path": [
+								"{{db}}",
+								"_find"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						},
+						"description": "to compact single database"
+					},
+					"response": []
+				},
+				{
+					"name": "_explain",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{user}}:{{password}}@{{server}}:{{port}}/{{db}}/_explain",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"auth": {
+								"user": "{{user}}",
+								"password": "{{password}}"
+							},
+							"port": "{{port}}",
+							"path": [
+								"{{db}}",
+								"_explain"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						},
+						"description": "\tIdentify which index is being used by a particular query."
+					},
+					"response": []
+				},
+				{
+					"name": "DB",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{user}}:{{password}}@{{server}}:{{port}}/{{db}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"auth": {
+								"user": "{{user}}",
+								"password": "{{password}}"
+							},
+							"port": "{{port}}",
+							"path": [
+								"{{db}}"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						},
+						"description": "to compact single database"
+					},
+					"response": []
+				},
+				{
+					"name": "DB with all docs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{user}}:{{password}}@{{server}}:{{port}}/{{db}}/_all_docs",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"auth": {
+								"user": "{{user}}",
+								"password": "{{password}}"
+							},
+							"port": "{{port}}",
+							"path": [
+								"{{db}}",
+								"_all_docs"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						},
+						"description": "to compact single database"
+					},
+					"response": []
+				},
+				{
+					"name": "get dezign docs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{user}}:{{password}}@{{server}}:{{port}}/{{db}}/_design_docs",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"auth": {
+								"user": "{{user}}",
+								"password": "{{password}}"
+							},
+							"port": "{{port}}",
+							"path": [
+								"{{db}}",
+								"_design_docs"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						},
+						"description": "to compact single database"
+					},
+					"response": []
+				},
+				{
+					"name": "shards",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{user}}:{{password}}@{{server}}:{{port}}/{{db}}/_shards",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"auth": {
+								"user": "{{user}}",
+								"password": "{{password}}"
+							},
+							"port": "{{port}}",
+							"path": [
+								"{{db}}",
+								"_shards"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						},
+						"description": "The response will contain a list of database shards. Each shard will have its internal database range, and the nodes on which replicas of those shards are stored."
+					},
+					"response": []
+				},
+				{
+					"name": "specific shard",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{user}}:{{password}}@{{server}}:{{port}}/{{db}}/_shards/doc",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"auth": {
+								"user": "{{user}}",
+								"password": "{{password}}"
+							},
+							"port": "{{port}}",
+							"path": [
+								"{{db}}",
+								"_shards",
+								"doc"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns information about the specific shard into which a given document has been stored, along with information about the nodes on which that shard has a replica."
+					},
+					"response": []
+				},
+				{
+					"name": "_sync_shards",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{user}}:{{password}}@{{server}}:{{port}}/{{db}}/_sync_shards",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"auth": {
+								"user": "{{user}}",
+								"password": "{{password}}"
+							},
+							"port": "{{port}}",
+							"path": [
+								"{{db}}",
+								"_sync_shards"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						},
+						"description": "For the given database, force-starts internal shard synchronization for all replicas of all database shards.\n\nThis is typically only used when performing cluster maintenance, such as moving a shard."
+					},
+					"response": []
+				},
+				{
+					"name": "_changes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{user}}:{{password}}@{{server}}:{{port}}/{{db}}/_changes",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"auth": {
+								"user": "{{user}}",
+								"password": "{{password}}"
+							},
+							"port": "{{port}}",
+							"path": [
+								"{{db}}",
+								"_changes"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a sorted list of changes made to documents in the database, in time order of application, can be obtained from the database’s _changes resource. Only the most recent change for a given document is guaranteed to be provided, for example if a document has had fields added, and then deleted, an API client checking for changes will not necessarily receive the intermediate state of added documents.\n\nThis can be used to listen for update and modifications to the database for post processing or synchronization, and for practical purposes, a continuously connected _changes feed is a reasonable approach for generating a real-time log for most applications."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "diagnose",
+			"item": [
+				{
+					"name": "membership",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{user}}:{{password}}@{{server}}:{{port}}/_membership",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"auth": {
+								"user": "{{user}}",
+								"password": "{{password}}"
+							},
+							"port": "{{port}}",
+							"path": [
+								"_membership"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check if up",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{user}}:{{password}}@{{server}}:{{port}}/_up",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"auth": {
+								"user": "{{user}}",
+								"password": "{{password}}"
+							},
+							"port": "{{port}}",
+							"path": [
+								"_up"
+							]
+						},
+						"description": "Confirms that the server is up, running, and ready to respond to requests. If maintenance_mode is true or nolb, the endpoint will return a 404 response."
+					},
+					"response": []
+				},
+				{
+					"name": "system statistics",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{user}}:{{password}}@{{server}}:{{port}}/_node/{{nodename}}/_system",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"auth": {
+								"user": "{{user}}",
+								"password": "{{password}}"
+							},
+							"port": "{{port}}",
+							"path": [
+								"_node",
+								"{{nodename}}",
+								"_system"
+							]
+						},
+						"description": "Confirms that the server is up, running, and ready to respond to requests. If maintenance_mode is true or nolb, the endpoint will return a 404 response."
+					},
+					"response": []
+				},
+				{
+					"name": "_stats",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{user}}:{{password}}@{{server}}:{{port}}/_node/{{nodename}}/_stats",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"auth": {
+								"user": "{{user}}",
+								"password": "{{password}}"
+							},
+							"port": "{{port}}",
+							"path": [
+								"_node",
+								"{{nodename}}",
+								"_stats"
+							]
+						},
+						"description": "The _stats resource returns a JSON object containing the statistics for the running server. The object is structured with top-level sections collating the statistics for a range of entries, with each individual statistic being easily identified, and the content of each statistic is self-describing.\n\nThe literal string _local serves as an alias for the local node name, so for all stats URLs, {node-name} may be replaced _local, to interact with the local node’s statistics."
+					},
+					"response": []
+				},
+				{
+					"name": "_config",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{user}}:{{password}}@{{server}}:{{port}}/_node/{{nodename}}/_config",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"auth": {
+								"user": "{{user}}",
+								"password": "{{password}}"
+							},
+							"port": "{{port}}",
+							"path": [
+								"_node",
+								"{{nodename}}",
+								"_config"
+							]
+						},
+						"description": "Returns the entire CouchDB server configuration as a JSON structure. The structure is organized by different configuration sections, with individual values."
+					},
+					"response": []
+				},
+				{
+					"name": "cluster_status",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{user}}:{{password}}@{{server}}:{{port}}/_cluster_status",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"auth": {
+								"user": "{{user}}",
+								"password": "{{password}}"
+							},
+							"port": "{{port}}",
+							"path": [
+								"_cluster_status"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "add_user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{user}}:{{password}}@{{server}}:{{port}}/{{nodename}}/_config/admins/username -d '\"PASSWORD\"'",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"auth": {
+								"user": "{{user}}",
+								"password": "{{password}}"
+							},
+							"port": "{{port}}",
+							"path": [
+								"{{nodename}}",
+								"_config",
+								"admins",
+								"username -d '\"PASSWORD\"'"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Docs",
+			"item": [
+				{
+					"name": "get document",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{user}}:{{password}}@{{server}}:{{port}}/{{db}}/{{ddoc}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"auth": {
+								"user": "{{user}}",
+								"password": "{{password}}"
+							},
+							"port": "{{port}}",
+							"path": [
+								"{{db}}",
+								"{{ddoc}}"
+							],
+							"query": [
+								{
+									"key": "ddoc",
+									"value": "",
+									"disabled": true
+								}
+							]
+						},
+						"description": "to compact single database"
+					},
+					"response": []
+				},
+				{
+					"name": "insert document",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{user}}:{{password}}@{{server}}:{{port}}/{{db}}/{{$guid}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"auth": {
+								"user": "{{user}}",
+								"password": "{{password}}"
+							},
+							"port": "{{port}}",
+							"path": [
+								"{{db}}",
+								"{{$guid}}"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						},
+						"description": "to compact single database"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete doc",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{user}}:{{password}}@{{server}}:{{port}}/{{db}}/{{ddoc}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"auth": {
+								"user": "{{user}}",
+								"password": "{{password}}"
+							},
+							"port": "{{port}}",
+							"path": [
+								"{{db}}",
+								"{{ddoc}}"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						},
+						"description": "to delete single doc"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
