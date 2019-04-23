@@ -1,0 +1,2554 @@
+{
+	"info": {
+		"_postman_id": "94b6d2ff-62c8-4aa1-81cd-10d5f481a25a",
+		"name": "KAZOO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Storage",
+			"item": [
+				{
+					"name": "PUT_storage",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/storage",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"storage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET_storage",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjRhZGMyMzE3N2JkMmU5MDBmMjUxMTcyOTI5YmE3Y2Y2In0.eyJpc3MiOiJrYXpvbyIsImlkZW50aXR5X3NpZyI6IjByRHFNaXNHOENXMFR5NnFORXdoYUpuME9oVlUzZHJMd0RqZzdrano1bTQiLCJhY2NvdW50X2lkIjoiNDkwNjBiZDY2YTNiMjg3MTk0NjA5MjQ2ODQ2NjgyNmMiLCJvd25lcl9pZCI6ImNhY2RlOGU1ZDBiYjdkZGU5ZjNiNGNkZGUyOGRhZDAwIiwibWV0aG9kIjoiY2JfdXNlcl9hdXRoIiwiZXhwIjoxNTM5MzQyNTE1fQ.CW-wHgp96AcnMyJVU2-9fXQXls67M895kM2pEAbqtLkZtov6v5fTyYwOxxng3LHrym0nbia6W2zerD0mBkVIrajEiNmN59ftwAJ9BrLYGL5wT1Q98XIk0pBEfef1ceaSVkToDOVtTZQLWfuys6uIZHGbJDgRnaN4hq6tCi871HdCegbxNUCG8OkXmTmtyXqotYe5vIsK_q_Qj_7lAJYF2chyWQVVnjdPEDUeMHT1FAK10HG8MKJEzYbHycx3HJt8BpecpOe89WI_IN-9_uQ_JYese0c0D8saE5RsSvZdpRasPNWmKNqp50OqNeawXXr3H89hB6dZypGTr2yJWkQyRQ.eyJpc3MiOiJrYXpvbyIsImlkZW50aXR5X3NpZyI6IjByRHFNaXNHOENXMFR5NnFORXdoYUpuME9oVlUzZHJMd0RqZzdrano1bTQiLCJhY2NvdW50X2lkIjoiNDkwNjBiZDY2YTNiMjg3MTk0NjA5MjQ2ODQ2NjgyNmMiLCJvd25lcl9pZCI6ImNhY2RlOGU1ZDBiYjdkZGU5ZjNiNGNkZGUyOGRhZDAwIiwibWV0aG9kIjoiY2JfdXNlcl9hdXRoIiwiZXhwIjoxNTM5MjQ5OTM2fQ.gwxaXtHSxf9XwJ6n_VhOkmu1isjknGmIsakHF0OzBG3StP6Nc69txLCaxCqfSTohk31SqplOJjECYcn7V45hxwxr7zob_YOUejIzLNTLx_hpBbaKMALkUjYrgb8yJB7GfvbaYgq8N4_KWfxvddJl_B6X_cgWJ2oUICFEud0Jd1lAxhiNqDl_bo_YbW8dW6r4kA97g4CVivZBb4ffdENVWCDqtHvUn_lcN5-0CQ3ae6qVWYCY0owK1di_6yER0J_NuX2BJHJxOQUbNRe46rA9-ksRBKwnDcUQOSWrMpVK6REBiFRQc6VrwcOw1elXW3rPU6KRyQyER2r7BBW8rSIKSA"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/storage",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"storage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST_global_storage",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\": {\n\t\t\"attachments\": {},\n\t\t\"connections\": {\n\t\t\t\"44ff1225845047df8df1c3d31376a7c5\": {\n\t\t\t\t\"driver\": \"kazoo_couch\",\n\t\t\t\t\"name\": \"voicemail_couch\",\n\t\t\t\t\"connect_options\": {\n\t\t\t\t\t\"keepalive\": true\n\t\t\t\t},\n\t\t\t\t\"settings\": {\n\t\t\t\t\t\"credentials\": {\n\t\t\t\t\t\t\"username\": \"voicemail\",\n\t\t\t\t\t\t\"password\": 1234567\n\t\t\t\t\t},\n\t\t\t\t\t\"ip\": \"10.1.19.71\",\n\t\t\t\t\t\"port\": 5984\n\t\t\t\t}\n\t\t\t},\n\t\t\t\"local\": {}\n\t\t},\n\t\t\"plan\": {\n\t\t\t\"account\": {\n\t\t\t\t\"attachments\": {},\n\t\t\t\t\"connection\": \"local\",\n\t\t\t\t\"types\": {}\n\t\t\t},\n\t\t\t\"modb\": {\n\t\t\t\t\"attachments\": {},\n\t\t\t\t\"connection\": \"local\",\n\t\t\t\t\"types\": {\n\t\t\t\t\t\"mailbox_message\": {\n\t\t\t\t\t\t\"connection\": \"44ff1225845047df8df1c3d31376a7c5\"\n\t\t\t\t\t},\n\t\t\t\t\t\"call_recording\": {\n\t\t\t\t\t\t\"connection\": \"44ff1225845047df8df1c3d31376a7c5\"\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t},\n\t\t\t\"system\": {\n\t\t\t\t\"attachments\": {},\n\t\t\t\t\"connection\": \"local\",\n\t\t\t\t\"types\": {}\n\t\t\t}\n\t\t},\n\t\t\"id\": \"system\"\n\n\t}\n}"
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/storage",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"storage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE_storage",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjRhZGMyMzE3N2JkMmU5MDBmMjUxMTcyOTI5YmE3Y2Y2In0.eyJpc3MiOiJrYXpvbyIsImlkZW50aXR5X3NpZyI6IjByRHFNaXNHOENXMFR5NnFORXdoYUpuME9oVlUzZHJMd0RqZzdrano1bTQiLCJhY2NvdW50X2lkIjoiNDkwNjBiZDY2YTNiMjg3MTk0NjA5MjQ2ODQ2NjgyNmMiLCJvd25lcl9pZCI6ImNhY2RlOGU1ZDBiYjdkZGU5ZjNiNGNkZGUyOGRhZDAwIiwibWV0aG9kIjoiY2JfdXNlcl9hdXRoIiwiZXhwIjoxNTM5MzQyNTE1fQ.CW-wHgp96AcnMyJVU2-9fXQXls67M895kM2pEAbqtLkZtov6v5fTyYwOxxng3LHrym0nbia6W2zerD0mBkVIrajEiNmN59ftwAJ9BrLYGL5wT1Q98XIk0pBEfef1ceaSVkToDOVtTZQLWfuys6uIZHGbJDgRnaN4hq6tCi871HdCegbxNUCG8OkXmTmtyXqotYe5vIsK_q_Qj_7lAJYF2chyWQVVnjdPEDUeMHT1FAK10HG8MKJEzYbHycx3HJt8BpecpOe89WI_IN-9_uQ_JYese0c0D8saE5RsSvZdpRasPNWmKNqp50OqNeawXXr3H89hB6dZypGTr2yJWkQyRQ"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/storage",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"storage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET_storage_plan",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjRhZGMyMzE3N2JkMmU5MDBmMjUxMTcyOTI5YmE3Y2Y2In0.eyJpc3MiOiJrYXpvbyIsImlkZW50aXR5X3NpZyI6IjByRHFNaXNHOENXMFR5NnFORXdoYUpuME9oVlUzZHJMd0RqZzdrano1bTQiLCJhY2NvdW50X2lkIjoiNDkwNjBiZDY2YTNiMjg3MTk0NjA5MjQ2ODQ2NjgyNmMiLCJvd25lcl9pZCI6ImNhY2RlOGU1ZDBiYjdkZGU5ZjNiNGNkZGUyOGRhZDAwIiwibWV0aG9kIjoiY2JfdXNlcl9hdXRoIiwiZXhwIjoxNTM5MzQyNTE1fQ.CW-wHgp96AcnMyJVU2-9fXQXls67M895kM2pEAbqtLkZtov6v5fTyYwOxxng3LHrym0nbia6W2zerD0mBkVIrajEiNmN59ftwAJ9BrLYGL5wT1Q98XIk0pBEfef1ceaSVkToDOVtTZQLWfuys6uIZHGbJDgRnaN4hq6tCi871HdCegbxNUCG8OkXmTmtyXqotYe5vIsK_q_Qj_7lAJYF2chyWQVVnjdPEDUeMHT1FAK10HG8MKJEzYbHycx3HJt8BpecpOe89WI_IN-9_uQ_JYese0c0D8saE5RsSvZdpRasPNWmKNqp50OqNeawXXr3H89hB6dZypGTr2yJWkQyRQ"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/storage/plans",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"storage",
+								"plans"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "System",
+			"item": [
+				{
+					"name": "phone_numbers/classifiers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/phone_numbers/classifiers",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"phone_numbers",
+								"classifiers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch system_status",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/system_status",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"system_status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch data from call inspector",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/call_inspector",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"call_inspector"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "setup new global phone_numbers/classifiers",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \n        \"Ukrainian mobile\": {\n            \"regex\": \"^\\\\+?38(0[679]3\\\\d{7})$|^\\\\+?38(050\\\\d{7})$|^\\\\+?38(06[678]\\\\d{7})$|^\\\\+?38(09[124-9]\\\\d{7})$\",\n            \"friendly_name\": \"Ukrainian mobile\"\n        },\n        \"Ukrainian PSTN\": {\n            \"regex\": \"^\\\\+?38(0\\\\d{9})$\",\n            \"friendly_name\": \"Ukrainian PSTN\"\n        },\n        \"international\": {\n            \"regex\": \"^(\\\\+[1-9]\\\\d{7,})$|^(00\\\\d{7,})$\",\n            \"friendly_name\": \"International\"\n        },\n        \"emergency\": {\n            \"regex\": \"^(10[1-4])$|^(112)$|^(5433)$\",\n            \"emergency\": true,\n            \"friendly_name\": \"Emergency Numbers\"\n        },\n        \"unknown\": {\n            \"regex\": \"^(.*)$\",\n            \"friendly_name\": \"Unknown\"\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/phone_numbers/clasifiers",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"phone_numbers",
+								"clasifiers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Accounts",
+			"item": [
+				{
+					"name": "get account",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch an account's ancestor tree",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/tree",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"tree"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch immediate children of an account",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/children",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"children"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create new account",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove account",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change the account doc",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new child account",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Callflows",
+			"item": [
+				{
+					"name": "Fetch",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/callflows",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"callflows"
+							]
+						},
+						"description": "fetch account callflows"
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch callflow details",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/callflows/{{callflow_id}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"callflows",
+								"{{callflow_id}}"
+							]
+						},
+						"description": "fetch account callflows"
+					},
+					"response": []
+				},
+				{
+					"name": "Change a callflow object",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/callflows/{{callflow_id}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"callflows",
+								"{{callflow_id}}"
+							]
+						},
+						"description": "Change a callflow object"
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new callflow",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/callflows",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"callflows"
+							]
+						},
+						"description": "Create a new callflow"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove a callflow",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/callflows/{{callflow_id}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"callflows",
+								"{{callflow_id}}"
+							]
+						},
+						"description": "Create a new callflow"
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "7c2a74a0-b2a3-449e-9093-d2551523afd8",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "738c8118-5a3c-4a02-be0d-e4efe9c34b43",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "CDR",
+			"item": [
+				{
+					"name": "Fetch CDRS",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/cdrs",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"cdrs"
+							]
+						},
+						"description": "Fetch"
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch a CDR details",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/cdrs/{{cdr_id}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"cdrs",
+								"{{cdr_id}}"
+							]
+						},
+						"description": "Fetch"
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch interaction summary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/cdrs/interaction",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"cdrs",
+								"interaction"
+							]
+						},
+						"description": "Fetch"
+					},
+					"response": []
+				},
+				{
+					"name": "CDRs/interactions for a specific user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/users/{{user_id}}cdrs",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"users",
+								"{{user_id}}cdrs"
+							]
+						},
+						"description": "FetchCDRs/interactions for a specific user"
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch interaction legs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/cdrs/legs/{{interaction_id}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"cdrs",
+								"legs",
+								"{{interaction_id}}"
+							]
+						},
+						"description": "FetchCDRs/interactions for a specific user"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Limits",
+			"item": [
+				{
+					"name": "Fetch limits",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/limits",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"limits"
+							]
+						},
+						"description": "Fetch"
+					},
+					"response": []
+				},
+				{
+					"name": "Update limits for a given account",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/limits",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"limits"
+							]
+						},
+						"description": "Fetch"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Phone numbers",
+			"item": [
+				{
+					"name": "Search For Available Numbers On System",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/phone_numbers?prefix=415&quantity=2",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"phone_numbers"
+							],
+							"query": [
+								{
+									"key": "prefix",
+									"value": "415"
+								},
+								{
+									"key": "quantity",
+									"value": "2"
+								}
+							]
+						},
+						"description": "Fetch"
+					},
+					"response": []
+				},
+				{
+					"name": "Search for available numbers you own",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/phone_numbers?prefix=415&quantity=2&offset=6",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"phone_numbers"
+							],
+							"query": [
+								{
+									"key": "prefix",
+									"value": "415"
+								},
+								{
+									"key": "quantity",
+									"value": "2"
+								},
+								{
+									"key": "offset",
+									"value": "6"
+								}
+							]
+						},
+						"description": "Fetch"
+					},
+					"response": []
+				},
+				{
+					"name": "List Account's Phone Numbers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/phone_numbers",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"phone_numbers"
+							]
+						},
+						"description": "Fetch"
+					},
+					"response": []
+				},
+				{
+					"name": "List An Account's Specific Phone Number",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/phone_numbers/{{phone_number}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"phone_numbers",
+								"{{phone_number}}"
+							]
+						},
+						"description": "Fetch"
+					},
+					"response": []
+				},
+				{
+					"name": "Return which account a number belongs to",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/phone_numbers/{{phone_number}}/identify",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"phone_numbers",
+								"{{phone_number}}",
+								"identify"
+							]
+						},
+						"description": "Fetch"
+					},
+					"response": []
+				},
+				{
+					"name": "Add a number to the database",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/phone_numbers/{{phone_number}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"phone_numbers",
+								"{{phone_number}}"
+							]
+						},
+						"description": "Fetch"
+					},
+					"response": []
+				},
+				{
+					"name": "Add a list of numbers to the database",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/phone_numbers/collection",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"phone_numbers",
+								"collection"
+							]
+						},
+						"description": "Fetch"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Public Fields Of A Number",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/phone_numbers/{{phone_number}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"phone_numbers",
+								"{{phone_number}}"
+							]
+						},
+						"description": "Fetch"
+					},
+					"response": []
+				},
+				{
+					"name": "Check Availability Of Phone Numbers",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/phone_numbers/check",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"phone_numbers",
+								"check"
+							]
+						},
+						"description": "Fetch"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove a number from the account owning it",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/phone_numbers/{{phone_number}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"phone_numbers",
+								"{{phone_number}}"
+							]
+						},
+						"description": "Fetch"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove a list of numbers from the database",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/phone_numbers/collection",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"phone_numbers",
+								"collection"
+							]
+						},
+						"description": "Fetch"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "System_configs",
+			"item": [
+				{
+					"name": "Fetch Specific Config Category Default Values",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/system_configs/{{system_config_id}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"system_configs",
+								"{{system_config_id}}"
+							]
+						},
+						"description": "Fetch Specific Config Category Default Values"
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch Config Category with All Node Values and Default Values",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/system_configs/{{system_config_id}}?with_defaults=true",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"system_configs",
+								"{{system_config_id}}"
+							],
+							"query": [
+								{
+									"key": "with_defaults",
+									"value": "true"
+								}
+							]
+						},
+						"description": "Fetch Config Category with All Node Values and Default Values\n\ncurl -v -X GET \\\n    -H \"X-Auth-Token: {AUTH_TOKEN}\" \\\n    http://{SERVER}:8000/v2/system_configs/{SYSTEM_CONFIG_ID}"
+					},
+					"response": []
+				},
+				{
+					"name": "Create System Config Category",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/system_configs/{{system_config_id}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"system_configs",
+								"{{system_config_id}}"
+							]
+						},
+						"description": "Create System Config Category"
+					},
+					"response": []
+				},
+				{
+					"name": "Update System Config Category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/system_configs/{{system_config_id}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"system_configs",
+								"{{system_config_id}}"
+							]
+						},
+						"description": "Update System Config Category\n\ncurl -v -X POST \\\n    -H \"X-Auth-Token: {AUTH_TOKEN}\" \\\n    http://{SERVER}:8000/v2/system_configs/{SYSTEM_CONFIG_ID}"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/system_configs/{{system_config_id}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"system_configs",
+								"{{system_config_id}}"
+							]
+						},
+						"description": "curl -v -X DELETE \\\n    -H \"X-Auth-Token: {AUTH_TOKEN}\" \\\n    http://{SERVER}:8000/v2/system_configs/{SYSTEM_CONFIG_ID}"
+					},
+					"response": []
+				}
+			],
+			"description": "!!! note You must be superduper_admin to access this resource. Also make sure that the system_configs crossbar module has been enabled. sup crossbar_maintenance start_module cb_system_configs.\n\nManipulate documents in the system_config database via Crossbar.\n\nA system configuration document is a JSON document of certain syntactic type (each node value must be a JSON object of type system_config.$config_name). REST API allows to address both documents and document nodes. Default node of the configuration document is treated specially, see below.\n\nIn order to avoid confusion configuration document nodes we call document sections, each such section is a JSON object representing a configuration object for Kazoo node or zone.\n\nGeneral idea is to return (with with_defaults=true URI option) the effective values for configuration, therefore a complex merge down is performed: document values are merged with document default section, and then merged with schema defaults.\n\nTherefore on save actions (PUT/POST/PATCH) a reverse operation is performed: a difference from defaults is calculated and stored to the document (if any). Thus by setting a value to schema default will effectively remove it from the document on save action.\n\nDocuments\nGET always returns either an empty document or stored document. The document always has a default section included, populated with default values deduced from schema.\n\nPOST expects to receive a complete configuration document. The document must be valid, each section of the document must pass the validation against system_config.$config_name schema. Before saving the difference with provided default is calculated, and then the difference with schema defaults is calculated, and then the result of this is stored, meaning if section value is equal to default section value it will not be stored to the document. The actual (stored) values are then returned as POST results.\n\nPATCH will merge provided changes with stored document, and then the resulting document is valid then the same store procedure is applied as in POST. The actual stored values are then returned as PATCH result.\n\nDELETE deletes the document (or wipes a section). Attempt to delete non-existing configuration object will generate an HTTP 404 error.\n\nSections\nGET always returns either an empty document or stored values.\n\nPOST expects to receive a valid configuration document (against schema system_config.$config_name). If the document is valid, then a difference is calculated with configuration document default section, and then the difference is calculated with schema defaults, and then the result is stored. For default section only the difference from schema defaults are calculated. The actual (stored) values are returned as result of POST request.\n\nPATCH will merge provided changes with stored section, and then the result is validated against schema. If result is valid, then the same procedure is applied as in POST. The actual (stored) values are returned as PATCH result.\n\nDELETE deletes the section specified. If configuration document doesn't exist (or section in the document), then the request will fail with HTTP 404.\n\nDefaults\nIn order to have effective configuration values one must provide with_defaults=true URI parameter for GET requests (either to get document or document section). With this parameter provided a configuration merge down as described above is performed.\n\n",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "713c3480-fe27-46b7-bf7a-327c44af816f",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "cb1d71f5-67e6-4b46-92af-d8f880217e28",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Sup",
+			"item": [
+				{
+					"name": "Execute A Command With No Arguments",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/sup/{{module}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"sup",
+								"{{module}}"
+							]
+						},
+						"description": "Execute A Command With No Arguments\n\ncurl -v -X GET \\\n    -H \"X-Auth-Token: {AUTH_TOKEN}\" \\\n    http://{SERVER}:8000/v2/sup/{MODULE}/{FUNCTION}\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Execute A Command Arguments",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/sup/{{sup_module}}/{{sup_function}}/{{sup_args}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"sup",
+								"{{sup_module}}",
+								"{{sup_function}}",
+								"{{sup_args}}"
+							]
+						},
+						"description": "curl -v -X GET \\\n    -H \"X-Auth-Token: {AUTH_TOKEN}\" \\\n    http://{SERVER}:8000/v2/sup/{MODULE}/{FUNCTION}/{ARGS}"
+					},
+					"response": []
+				}
+			],
+			"description": "Overview\nThe SUP API is meant to mirror command-line interactions with the SUP tool. It will only run on the local API server.\n\n!!! note You must be super_duper_admin to access the SUP endpoint.\n\nActivation\nTo update the running Crossbar system with this endpoint, issue the following sup command:\n\nsup crossbar_maintenance start_module cb_sup\nIf you want this endpoint to load by default, modify the crossbar doc in the system_config database, and add cb_sup to the autoload_modules list.\n\nURL mapping\nRemember that SUP commands follow the format of:\n\nsup module_maintenance function [arg1, arg2,...]\nThe Crossbar URL is similarly constructed:\n\n/v1/sup/module/[function[/arg1/arg2/...]]\nThe important differences are:\n\nNo need to specify the _maintenance portion of the module\nfunction is optional and defaults to status/0 if not supplied\n"
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Fetch all users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/users",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"users"
+							]
+						},
+						"description": "curl -v -X GET \\\n    -H \"X-Auth-Token: {AUTH_TOKEN} \\\n    http://{SERVER}:8000/v2/accounts/{ACCOUNT_ID}/users"
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch a user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/users/{{user_id}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"users",
+								"{{user_id}}"
+							]
+						},
+						"description": "curl -v -X GET \\\n    -H \"X-Auth-Token: {AUTH_TOKEN} \\\n    http://{SERVER}:8000/v2/accounts/{ACCOUNT_ID}/users/{USER_ID}"
+					},
+					"response": []
+				},
+				{
+					"name": "Change the user doc",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/users/{{user_id}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"users",
+								"{{user_id}}"
+							]
+						},
+						"description": "This requires posting the full user's document in the request body\n\nurl -v -X POST \\\n    -H \"X-Auth-Token: {AUTH_TOKEN}\" \\\n    -H \"Content-Type: application/json\" \\\n    -d ..."
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new user",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/users",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"users"
+							]
+						},
+						"description": "curl -v -X PUT \\\n    -H \"X-Auth-Token: {AUTH_TOKEN} \\\n    -H \"Content-Type: application/json\" \\ -d ..."
+					},
+					"response": []
+				},
+				{
+					"name": "Remove a user",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/users/{{user_id}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"users",
+								"{{user_id}}"
+							]
+						},
+						"description": "curl -v -X DELETE \\\n    -H \"X-Auth-Token: {AUTH_TOKEN}\" \\\n    http://{SERVER}:8000/v2/accounts/{ACCOUNT_ID}/users/{USER_ID}"
+					},
+					"response": []
+				}
+			],
+			"description": "About Users\nUsers represent just that, your users of the system. You can assign multiple devices to a user, put the user in a callflow, and all devices will ring.\n\n"
+		},
+		{
+			"name": "Voicemail",
+			"item": [
+				{
+					"name": "Fetch",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/vmboxes",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"vmboxes"
+							]
+						},
+						"description": "curl -v -X GET \\\n    -H \"X-Auth-Token: {AUTH_TOKEN}\" \\\n    http://{SERVER}:8000/v2/accounts/{ACCOUNT_ID}/vmboxes"
+					},
+					"response": []
+				},
+				{
+					"name": "list all voicemail messages on an account",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/vmboxes/{{vm_box_id}}/messages",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"vmboxes",
+								"{{vm_box_id}}",
+								"messages"
+							]
+						},
+						"description": "curl -v -X GET \\\n    -H \"X-Auth-Token: {AUTH_TOKEN}\" \\\n    http://{SERVER}:8000/v2/accounts/{ACCOUNT_ID}/vmboxes/{VM_BOX_ID}/messages?paginate=true"
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch a voicemail box",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/vmboxes/{{vm_box_id}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"vmboxes",
+								"{{vm_box_id}}"
+							]
+						},
+						"description": "curl -v -X GET \\\n    -H \"X-Auth-Token: {AUTH_TOKEN}\" \\\n    http://{SERVER}:8000/v2/accounts/{ACCOUNT_ID}/vmboxes/{VM_BOX_ID}"
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch all messages for a voicemail box",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/vmboxes/{{vm_box_id}}/messages",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"vmboxes",
+								"{{vm_box_id}}",
+								"messages"
+							]
+						},
+						"description": "curl -v -X GET \\\n    -H \"X-Auth-Token: {AUTH_TOKEN}\" \\\n    http://{SERVER}:8000/v2/accounts/{ACCOUNT_ID}/vmboxes/{VM_BOX_ID}/messages"
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch a message from the voicemail box",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/vmboxes/{{vm_box_id}}/messages/{{vm_msg_id}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"vmboxes",
+								"{{vm_box_id}}",
+								"messages",
+								"{{vm_msg_id}}"
+							]
+						},
+						"description": "curl -v -X GET \\\n    -H \"X-Auth-Token: {AUTH_TOKEN}\" \\\n    http://{SERVER}:8000/v2/accounts/{ACCOUNT_ID}/vmboxes/{VM_BOX_ID}/messages/{VM_MSG_ID}"
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch the raw audio of the message",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/vmboxes/{{vm_box_id}}/messages/{{vm_msg_id}}/raw",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"vmboxes",
+								"{{vm_box_id}}",
+								"messages",
+								"{{vm_msg_id}}",
+								"raw"
+							]
+						},
+						"description": "curl -v -X GET \\\n    -H \"X-Auth-Token: {AUTH_TOKEN}\" \\\n    http://{SERVER}:8000/v2/accounts/{ACCOUNT_ID}/vmboxes/{VM_BOX_ID}/messages/{VM_MSG_ID}/raw"
+					},
+					"response": []
+				},
+				{
+					"name": "Change a voicemail box's settings",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/vmboxes/{{vm_box_id}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"vmboxes",
+								"{{vm_box_id}}"
+							]
+						},
+						"description": "curl -v -X POST \\\n    -H \"X-Auth-Token: {AUTH_TOKEN}\" \\\n    -H \"Content-Type: application/json\" \\\n    -d ..."
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch the raw audio of a list of messages as a ZIP file",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/vmboxes/{{vm_box_id}}/messages/raw",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"vmboxes",
+								"{{vm_box_id}}",
+								"messages",
+								"raw"
+							]
+						},
+						"description": "curl -v -X POST \\\n    -H \"X-Auth-Token: {AUTH_TOKEN}\" \\\n    -H \"Content-Type: application/json\" \\\n    -H \"Accept: application/zip\" \\\n    -d '{\"data\": {\"messages\": [\"MSG_ID1\", \"MSG_ID2\", \"MSG_ID3\"]}}' \\\n    http://{SERVER}:8000/v2/accounts/{ACCOUNT_ID}/vmboxes/{VM_BOX_ID}/messages/raw"
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new voicemail box",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/vmboxes",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"vmboxes"
+							]
+						},
+						"description": "curl -v -X PUT \\\n    -H \"X-Auth-Token: {AUTH_TOKEN}\" \\\n    -H \"Content-Type: application/json\" \\\n    -d  ..."
+					},
+					"response": []
+				},
+				{
+					"name": "Remove a voicemail box",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/vmboxes/{{vm_box_id}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"vmboxes",
+								"{{vm_box_id}}"
+							]
+						},
+						"description": "curl -v -X DELETE \\\n    -H \"X-Auth-Token: {AUTH_TOKEN}\" \\\n    http://{SERVER}:8000/v2/accounts/{ACCOUNT_ID}/vmboxes/{VM_BOX_ID}"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove a message from the voicemail box",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/vmboxes/{{vm_box_id}}/messages/{{vm_msg_id}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"vmboxes",
+								"{{vm_box_id}}",
+								"messages",
+								"{{vm_msg_id}}"
+							]
+						},
+						"description": "DELETE /v2/accounts/{ACCOUNT_ID}/vmboxes/{VM_BOX_ID}/messages/{VM_MSG_ID}"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove all or a list of messages from a voicemail box",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/vmboxes/{{vm_box_id}}/messages",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"vmboxes",
+								"{{vm_box_id}}",
+								"messages"
+							]
+						},
+						"description": "DELETE /v2/accounts/{ACCOUNT_ID}/vmboxes/{VM_BOX_ID}/messages"
+					},
+					"response": []
+				}
+			],
+			"description": "About Voicemail\nVoicemail boxes store messages, recorded from the caller, for the voicemail box owner to listen to at a later time.\n\nDifferences between Kazoo version 3.x and 4.x\nAs of Kazoo 4.0 all new voicemail messages will be stored in the account MODbs.\n\nRegarding this change voicemail API will no longer returns the messages array when fetching mailbox settings. The existing /messages API should be used to manage messages in a voicemail box.\n\nFor more information about voicemail changes see documentation for kazoo_voicemail.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "58d22f97-05c0-4fe5-8e6d-b454be1f647a",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "2a770729-f2db-4ecd-a428-8434b8e9d977",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Call inspector",
+			"item": [
+				{
+					"name": "Fetch",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/call_inspector",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"call_inspector"
+							]
+						},
+						"description": "curl -v -X GET \\\n    -H \"X-Auth-Token: {AUTH_TOKEN}\" \\\n    http://{SERVER}:8000/v2/accounts/{ACCOUNT_ID}/call_inspector"
+					},
+					"response": []
+				},
+				{
+					"name": "Read a call's SIP dialogue",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-Token",
+								"value": "{{auth_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}:{{port}}/v2/accounts/{{account_id}}/call_inspector/{{call_id}}",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v2",
+								"accounts",
+								"{{account_id}}",
+								"call_inspector",
+								"{{call_id}}"
+							]
+						},
+						"description": "curl -v -X GET \\\n    -H \"X-Auth-Token: {AUTH_TOKEN}\" \\\n    http://{SERVER}:8000/v2/accounts/{ACCOUNT_ID}/call_inspector/{CALL_ID}"
+					},
+					"response": []
+				}
+			],
+			"description": "About Call Inspector\nThe Call Inspector Crossbar resource allows the client to query and inspect data related to the Call Inspector application.\n\nMore info on Call Inspector.\n\nThe Call Inspector endpoint is not loaded on start in a default Kazoo installation.\n\nTo enable at runtime:\nsup crossbar_maintenance start_module cb_call_inspector\nTo autostart on Crossbar boot:\nNavigate to http://localhost:15984/_utils/document.html?system_config/crossbar\nEdit the autoload_modules list to include 'cb_call_inspector'\nClick the green check box to the right of the input box\nClick 'Save Document' in top left of the screen\nNote: adding cb_call_inspector to the crossbar system_config doc will not start the endpoint; only on restarting Crossbar will cb_call_inspector be loaded. Use the sup command above to start the endpoint at runtime.\n\n"
+		},
+		{
+			"name": "auth",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data\":{\"credentials\":\"{{credentials}}\", \"account_name\":\"{{account_name}}\", \"method\":\"md5\"}}"
+				},
+				"url": {
+					"raw": "http://{{server}}:{{port}}/v2/user_auth",
+					"protocol": "http",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"v2",
+						"user_auth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
